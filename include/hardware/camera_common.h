@@ -233,6 +233,16 @@ typedef enum camera_device_status {
 
 } camera_device_status_t;
 
+typedef enum torch_mode_status {
+
+    TORCH_MODE_STATUS_NOT_AVAILABLE = 0,
+
+    TORCH_MODE_STATUS_AVAILABLE_OFF = 1,
+
+    TORCH_MODE_STATUS_AVAILABLE_ON = 2,
+
+} torch_mode_status_t;
+
 /**
  * Callback functions for the camera HAL module to use to inform the framework
  * of changes to the camera subsystem. These are called only by HAL modules
